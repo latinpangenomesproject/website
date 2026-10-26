@@ -13,15 +13,5 @@ toc: false
 
 :::
 
-::: {.column width="4%"}
-:::
-
-::: {.column width="48%"}
-## Who to contact
-
-**Research participants and communities.** Questions about the project, how samples are used, or requests for a visit: [latinpangenomeproject@gmail.com](mailto:latinpangenomeproject@gmail.com)
-
-:::
-
 ::::
 

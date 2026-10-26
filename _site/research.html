@@ -328,7 +328,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#maps" id="toc-maps" class="nav-link active" data-scroll-target="#maps">Aim 1: A Latin American pangenome</a></li>
   <li><a href="#mechanisms" id="toc-mechanisms" class="nav-link" data-scroll-target="#mechanisms">Aim 2: How structural variants shape gene expression</a></li>
   <li><a href="#medicine" id="toc-medicine" class="nav-link" data-scroll-target="#medicine">Aim 3: Gallbladder cancer in Mapuche ancestry</a></li>
-  <li><a href="#capacity" id="toc-capacity" class="nav-link" data-scroll-target="#capacity">Aim 4: Local capacity</a></li>
+  <li><a href="#capacity" id="toc-capacity" class="nav-link" data-scroll-target="#capacity">Training: Local capacity</a></li>
   </ul>
 </nav>
     </div>
@@ -360,8 +360,8 @@ ul.task-list li input[type="checkbox"] {
 <p>This project builds on long-read sequencing funded by PacBio, and single-cell RNA profiles of 500+ PBMC samples and healthy gallbladder tissue from the CZI-funded <a href="https://www.latincells.org">LatinCells</a> project.</p>
 <section id="maps" class="level2">
 <h2 class="anchored" data-anchor-id="maps">Aim 1: A Latin American pangenome</h2>
-<p>We will select 1,000 reference samples representing the major ancestral components of the Americas, prioritizing individuals with the highest proportions of Indigenous ancestry based on existing SNP-array data. Each will be sequenced with PacBio HiFi at 30× coverage.</p>
-<p>Every genome gets a <em>de novo</em> assembly, avoiding reference bias. Assemblies are error-corrected, aligned in a multiple whole-genome alignment, and represented as a graph, from which structural variants (deletions, duplications, inversions, insertions and translocations) are called with tools such as the <code>vg</code> toolkit. Variants are annotated against known SV databases, compared with the current reference, and compared between Indigenous ancestries within the region.</p>
+<p>We will select reference samples representing the major ancestral components of the Americas, prioritizing individuals with the highest proportions of Indigenous ancestry based on existing SNP-array data. Each will be sequenced with PacBio HiFi at 30× coverage.</p>
+<p>Every genome gets a <em>de novo</em> assembly, avoiding reference bias. Assemblies are error-corrected, aligned in a multiple whole-genome alignment, and represented as a graph, from which structural variants (deletions, duplications, inversions, insertions and translocations) are called with tools. Variants are annotated against known SV databases, compared with the current reference, and compared between Indigenous ancestries within the region.</p>
 <p><strong>Outputs:</strong> the LatinPangenome graph, a catalog of structural variants segregating in Latin America, and a better reference for mapping WGS data from Latin American populations anywhere.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -373,7 +373,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="mechanisms" class="level2">
 <h2 class="anchored" data-anchor-id="mechanisms">Aim 2: How structural variants shape gene expression</h2>
 <p>Structural variants appear to have outsized effects on gene expression, yet SV-eQTL studies so far rely on short reads, bulk tissue and mostly European cohorts. Only 17% of GTEx v8 individuals are of non-European or admixed ancestry.</p>
-<p>We will combine high-confidence SVs from 520+ long-read genomes with single-cell RNA from the same individuals, spanning 10 Indigenous communities in 6 countries plus admixed populations. Using 29 cell types (20 immune, 9 gallbladder), we will:</p>
+<p>We will combine high-confidence SVs from 520+ long-read genomes with single-cell RNA from the same individuals, spanning Indigenous communities in different countries plus admixed populations. Using 29 cell types, we will:</p>
 <ol type="1">
 <li>map cis-eQTLs jointly for SNVs, indels and SVs (MAF ≥ 0.05) with a permutation-based approach, controlling for population structure;</li>
 <li>fine-map causal variants within 1 Mb windows with CAVIAR and measure the share of eQTLs led by an SV;</li>
@@ -391,8 +391,8 @@ ul.task-list li input[type="checkbox"] {
 <p>Chile reports the highest gallbladder cancer incidence worldwide, and its Mapuche population is the most affected, particularly women. Each 1% increase in Mapuche ancestry among admixed Chileans has been associated with a 3.7% increase in gallbladder cancer mortality risk.</p>
 <div class="columns">
 <div class="column" style="width:62%;">
-<p><strong>Germline SVs.</strong> We will map SV-eQTLs in 122 individuals (77 healthy donors from Aim 2 and 45 newly recruited cases), identify eGenes differentially expressed in tumor cell types, and test colocalization with published gallbladder cancer GWAS signals.</p>
-<p><strong>Somatic SVs at single-cell resolution.</strong> Strand-seq with scNOVA on 1,000 tumor cells from 10 Mapuche patients will catalog deletions, inversions, duplications and chromothripsis, and infer their effect on expression from nucleosome occupancy. Optical genome mapping of bulk tumor DNA from 45 patients will add smaller SVs that Strand-seq cannot resolve.</p>
+<p><strong>Germline SVs.</strong> We will map SV-eQTLs, identify eGenes differentially expressed in tumor cell types, and test colocalization with published gallbladder cancer GWAS signals.</p>
+<p><strong>Somatic SVs at single-cell resolution.</strong> Strand-seq with scNOVA on tumor cells from Mapuche patients will catalog deletions, inversions, duplications and chromothripsis, and infer their effect on expression from nucleosome occupancy. Optical genome mapping of bulk tumor DNA from patients will add smaller SVs that Strand-seq cannot resolve.</p>
 </div><div class="column" style="width:38%;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -404,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="capacity" class="level2">
-<h2 class="anchored" data-anchor-id="capacity">Aim 4: Local capacity</h2>
+<h2 class="anchored" data-anchor-id="capacity">Training: Local capacity</h2>
 <p>Helicopter research, thin infrastructure and short funding cycles have held back large-scale genomics in Latin America. This team is entirely Latin American, and the work is distributed so that capacity stays in the region: sequencing and SV discovery across the Broad Institute, Mexico and Uruguay; pangenome curation and storage in Uruguay; single-cell integration in Mexico; patient recruitment and gallbladder profiling in Chile.</p>
 
 

@@ -79,10 +79,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<meta name="mermaid-theme" content="neutral">
-<script src="site_libs/quarto-diagram/mermaid.min.js"></script>
-<script src="site_libs/quarto-diagram/mermaid-init.js"></script>
-<link href="site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="styles/extra.css">
@@ -329,7 +325,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#open-resources" id="toc-open-resources" class="nav-link active" data-scroll-target="#open-resources">Open resources</a></li>
   <li><a href="#controlled-access" id="toc-controlled-access" class="nav-link" data-scroll-target="#controlled-access">Controlled access</a></li>
-  <li><a href="#how-to-cite" id="toc-how-to-cite" class="nav-link" data-scroll-target="#how-to-cite">How to cite</a></li>
   </ul>
 </nav>
     </div>
@@ -367,39 +362,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Pangenome graphs and the SV-eQTL database will be released here as they pass quality control. <a href="./news/index.html">Follow the news</a> for release announcements.</p>
-</div>
-</div>
-<p>Data from the project goes to three places, depending on what it is and how identifiable it is.</p>
-<div class="cell" data-layout-align="default">
-<div class="cell-output-display">
-<div>
-<p></p><figure class="figure"><p></p>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  subgraph Data
-    A[LatinPangenome graph]
-    B[SV-eQTL and SNP-eQTL database]
-    C[Single-cell gene counts]
-    D[Individual-level genomes]
-  end
-  subgraph Host
-    P[LatinGenomes web portal]
-    Z[CZ CELLxGENE]
-    E[European Genome-phenome Archive]
-  end
-  U[Your computer]
-  A --&gt; P
-  B --&gt; P
-  C --&gt; Z
-  D --&gt; E
-  P -- open --&gt; U
-  Z -- open --&gt; U
-  E -- approved by the DAC --&gt; U
-</pre>
-</div>
-<p></p><figcaption> Data sharing strategy. Summary-level resources are public; individual-level sequences are available through controlled access.</figcaption> </figure><p></p>
-</div>
+<p>Pangenome graphs and the SV-eQTL database will be released upon publication. <a href="./news/index.html">Follow the news</a> for release announcements.</p>
 </div>
 </div>
 <section id="open-resources" class="level2">
@@ -410,16 +373,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="controlled-access" class="level2">
 <h2 class="anchored" data-anchor-id="controlled-access">Controlled access</h2>
-<p>Individual-level whole-genome sequences will be deposited in the <a href="https://ega-archive.org/">European Genome-phenome Archive</a>. Researchers apply through EGA, and requests are reviewed by a Data Access Committee of LatinGenomes researchers. The committee’s role is to make sure uses are consistent with the consent participants gave and with the expectations of their communities.</p>
-<!-- TODO: add the EGA study and dataset accessions (EGAS…/EGAD…) once issued -->
-</section>
-<section id="how-to-cite" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-cite">How to cite</h2>
-<!-- TODO: replace with the flagship publication once available -->
-<p>Until the flagship paper is published, please cite the resource as:</p>
-<blockquote class="blockquote">
-<p>LatinGenomes Consortium. <em>LatinPangenome: a Latin American pangenome reference.</em> https://latingenomes.org</p>
-</blockquote>
+<p>Individual-level whole-genome sequences will be deposited in the <a href="https://ega-archive.org/">European Genome-phenome Archive</a>. Researchers apply through EGA, and requests are reviewed by a Data Access Committee of Latin Pangenomes researchers. The committee’s role is to make sure uses are consistent with the consent participants gave and with the expectations of their communities.</p>
 
 
 </section>

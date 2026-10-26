@@ -9,9 +9,9 @@ This project builds on long-read sequencing funded by PacBio, and single-cell RN
 
 ## Aim 1: A Latin American pangenome {#maps}
 
-We will select 1,000 reference samples representing the major ancestral components of the Americas, prioritizing individuals with the highest proportions of Indigenous ancestry based on existing SNP-array data. Each will be sequenced with PacBio HiFi at 30× coverage.
+We will select reference samples representing the major ancestral components of the Americas, prioritizing individuals with the highest proportions of Indigenous ancestry based on existing SNP-array data. Each will be sequenced with PacBio HiFi at 30× coverage.
 
-Every genome gets a *de novo* assembly, avoiding reference bias. Assemblies are error-corrected, aligned in a multiple whole-genome alignment, and represented as a graph, from which structural variants (deletions, duplications, inversions, insertions and translocations) are called with tools such as the `vg` toolkit. Variants are annotated against known SV databases, compared with the current reference, and compared between Indigenous ancestries within the region.
+Every genome gets a *de novo* assembly, avoiding reference bias. Assemblies are error-corrected, aligned in a multiple whole-genome alignment, and represented as a graph, from which structural variants (deletions, duplications, inversions, insertions and translocations) are called with tools. Variants are annotated against known SV databases, compared with the current reference, and compared between Indigenous ancestries within the region.
 
 **Outputs:** the LatinPangenome graph, a catalog of structural variants segregating in Latin America, and a better reference for mapping WGS data from Latin American populations anywhere.
 
@@ -21,7 +21,7 @@ Every genome gets a *de novo* assembly, avoiding reference bias. Assemblies are 
 
 Structural variants appear to have outsized effects on gene expression, yet SV-eQTL studies so far rely on short reads, bulk tissue and mostly European cohorts. Only 17% of GTEx v8 individuals are of non-European or admixed ancestry.
 
-We will combine high-confidence SVs from 520+ long-read genomes with single-cell RNA from the same individuals, spanning 10 Indigenous communities in 6 countries plus admixed populations. Using 29 cell types (20 immune, 9 gallbladder), we will:
+We will combine high-confidence SVs from 520+ long-read genomes with single-cell RNA from the same individuals, spanning Indigenous communities in different countries plus admixed populations. Using 29 cell types, we will:
 
 1. map cis-eQTLs jointly for SNVs, indels and SVs (MAF ≥ 0.05) with a permutation-based approach, controlling for population structure;
 2. fine-map causal variants within 1 Mb windows with CAVIAR and measure the share of eQTLs led by an SV;
@@ -35,15 +35,15 @@ Chile reports the highest gallbladder cancer incidence worldwide, and its Mapuch
 
 :::: {.columns}
 ::: {.column width="62%"}
-**Germline SVs.** We will map SV-eQTLs in 122 individuals (77 healthy donors from Aim 2 and 45 newly recruited cases), identify eGenes differentially expressed in tumor cell types, and test colocalization with published gallbladder cancer GWAS signals.
+**Germline SVs.** We will map SV-eQTLs, identify eGenes differentially expressed in tumor cell types, and test colocalization with published gallbladder cancer GWAS signals.
 
-**Somatic SVs at single-cell resolution.** Strand-seq with scNOVA on 1,000 tumor cells from 10 Mapuche patients will catalog deletions, inversions, duplications and chromothripsis, and infer their effect on expression from nucleosome occupancy. Optical genome mapping of bulk tumor DNA from 45 patients will add smaller SVs that Strand-seq cannot resolve.
+**Somatic SVs at single-cell resolution.** Strand-seq with scNOVA on tumor cells from Mapuche patients will catalog deletions, inversions, duplications and chromothripsis, and infer their effect on expression from nucleosome occupancy. Optical genome mapping of bulk tumor DNA from patients will add smaller SVs that Strand-seq cannot resolve.
 :::
 ::: {.column width="38%"}
 ![Mapuche ancestry (left) and gallbladder cancer mortality (right) across Chile. From Lorenzo Bermejo et al. 2017.](assets/figures/fig5-chile-gbc.png){fig-alt="Two maps of Chile: estimated Mapuche ancestry proportions in red and gallbladder cancer mortality in gray, both highest in the south-central regions."}
 :::
 ::::
 
-## Aim 4: Local capacity {#capacity}
+## Training: Local capacity {#capacity}
 
 Helicopter research, thin infrastructure and short funding cycles have held back large-scale genomics in Latin America. This team is entirely Latin American, and the work is distributed so that capacity stays in the region: sequencing and SV discovery across the Broad Institute, Mexico and Uruguay; pangenome curation and storage in Uruguay; single-cell integration in Mexico; patient recruitment and gallbladder profiling in Chile.
