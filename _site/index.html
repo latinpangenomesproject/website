@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -71,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./assets/logo.svg" rel="icon" type="image/svg+xml">
+<link href="./assets/favicon.svg" rel="icon" type="image/svg+xml">
 <script src="site_libs/quarto-listing/list.min.js"></script>
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
@@ -80,9 +80,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b626d73c4c936ccc3cb08be7d45d1df6.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-1ea3b6b895e13540860a50edb7c4643f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
@@ -394,10 +394,14 @@ window.Quarto = {
     <a class="nav-link" href="./news/index.html"> 
 <span class="menu-text">News</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/latinpangenomeproject/"> <i class="bi bi-github" role="img" aria-label="GitHub">
+    <a class="nav-link" href="https://github.com/latinpangenomesproject/"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -421,18 +425,43 @@ window.Quarto = {
 
 
 
-<section id="a-pangenome-for-latin-america" class="level1 hero">
-<h1>A pangenome for Latin America</h1>
+<div class="hero">
+<!-- Project logo: ink parts use currentColor and node centers use the page background,
+     so the same mark works in both light and dark mode -->
+<div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin-bottom:2.5rem">
+  <svg viewbox="4 24 112 72" width="168" height="108" role="img" aria-label="Latin Pangenomes Project logo" xmlns="http://www.w3.org/2000/svg" style="flex:none">
+    <g fill="none" stroke-linecap="round" stroke-width="7">
+      <path d="M12 60 H28" stroke="currentColor"></path>
+      <path d="M52 60 H64" stroke="currentColor"></path>
+      <path d="M96 60 H108" stroke="currentColor"></path>
+      <path d="M28 60 C33 34 47 34 52 60" stroke="#E3A92B"></path>
+      <path d="M28 60 C33 86 47 86 52 60" stroke="currentColor"></path>
+      <path d="M64 60 C71 24 89 24 96 60" stroke="#D6423B"></path>
+      <path d="M64 60 H96" stroke="currentColor"></path>
+      <path d="M64 60 C71 96 89 96 96 60" stroke="var(--bs-primary)"></path>
+    </g>
+    <g fill="var(--bs-body-bg)" stroke="currentColor" stroke-width="4">
+      <circle cx="28" cy="60" r="6.5"></circle><circle cx="52" cy="60" r="6.5"></circle>
+      <circle cx="64" cy="60" r="6.5"></circle><circle cx="96" cy="60" r="6.5"></circle>
+    </g>
+    <circle cx="12" cy="60" r="4.5" fill="currentColor"></circle>
+    <circle cx="108" cy="60" r="4.5" fill="currentColor"></circle>
+  </svg>
+  <div style="font-family:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;line-height:1.05">
+    <div style="font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;letter-spacing:-0.02em">Latin Pangenomes</div>
+    <div style="font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;color:var(--lg-muted)">Project</div>
+  </div>
+</div>
 <p><span class="lede">We are sequencing 1,000 long-read genomes from Indigenous and admixed ancestries across Latin America to find the structural variation that the current human reference genome misses, and to learn what it does in immune cells and in gallbladder cancer.</span></p>
-</section>
+</div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="22" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 21;"><span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>cohorts <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/cohorts.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>places <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/countries.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>topojson <span class="op">=</span> <span class="pp">require</span>(<span class="st">"topojson-client@3"</span>)</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>world <span class="op">=</span> d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>land <span class="op">=</span> topojson<span class="op">.</span><span class="fu">feature</span>(world<span class="op">,</span> world<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">countries</span>)</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>partnerColor <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(places<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [d<span class="op">.</span><span class="at">atlas_name</span><span class="op">,</span> d<span class="op">.</span><span class="at">color</span>]))</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>dark <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="at">classList</span><span class="op">.</span><span class="fu">contains</span>(<span class="st">"quarto-dark"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="49" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 48;"><span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>cohorts <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/cohorts.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>places <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"data/countries.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>topojson <span class="op">=</span> <span class="pp">require</span>(<span class="st">"topojson-client@3"</span>)</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>world <span class="op">=</span> d3<span class="op">.</span><span class="fu">json</span>(<span class="st">"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json"</span>)</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>land <span class="op">=</span> topojson<span class="op">.</span><span class="fu">feature</span>(world<span class="op">,</span> world<span class="op">.</span><span class="at">objects</span><span class="op">.</span><span class="at">countries</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>partnerColor <span class="op">=</span> <span class="kw">new</span> <span class="bu">Map</span>(places<span class="op">.</span><span class="fu">map</span>(d <span class="kw">=&gt;</span> [d<span class="op">.</span><span class="at">atlas_name</span><span class="op">,</span> d<span class="op">.</span><span class="at">color</span>]))</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>dark <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="at">body</span><span class="op">.</span><span class="at">classList</span><span class="op">.</span><span class="fu">contains</span>(<span class="st">"quarto-dark"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-1-1" data-nodetype="declaration">
@@ -484,40 +513,40 @@ window.Quarto = {
 </div>
 </div>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="33" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 32;"><span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>totals <span class="op">=</span> places<span class="op">.</span><span class="fu">map</span>(p <span class="kw">=&gt;</span> {</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> rows <span class="op">=</span> cohorts<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">country</span> <span class="op">===</span> p<span class="op">.</span><span class="at">country</span>)</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> {<span class="op">...</span>p<span class="op">,</span> <span class="dt">value</span><span class="op">:</span> d3<span class="op">.</span><span class="fu">sum</span>(rows<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lr_wgs</span> <span class="op">??</span> <span class="dv">0</span>)<span class="op">,</span> n<span class="op">:</span> rows<span class="op">.</span><span class="at">length</span>}</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>})<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">value</span> <span class="op">&gt;</span> <span class="dv">0</span>)</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(width<span class="op">,</span> <span class="dv">760</span>)<span class="op">,</span></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(width<span class="op">,</span> <span class="dv">760</span>) <span class="op">*</span> <span class="fl">1.05</span><span class="op">,</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"mercator"</span><span class="op">,</span></span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span> <span class="dt">coordinates</span><span class="op">:</span> [[<span class="op">-</span><span class="dv">112</span><span class="op">,</span> <span class="dv">30</span>]<span class="op">,</span> [<span class="op">-</span><span class="dv">36</span><span class="op">,</span> <span class="op">-</span><span class="dv">55</span>]]}<span class="op">,</span></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">8</span></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
-<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  <span class="dt">r</span><span class="op">:</span> {<span class="dt">range</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">34</span>]<span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">220</span>]}<span class="op">,</span></span>
-<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
-<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(land<span class="op">,</span> {<span class="dt">fill</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#1E2D45"</span> <span class="op">:</span> <span class="st">"#E4E9EF"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#0E1A2E"</span> <span class="op">:</span> <span class="st">"#FFFFFF"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.6</span>})<span class="op">,</span></span>
-<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(land<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="fu">filter</span>(f <span class="kw">=&gt;</span> partnerColor<span class="op">.</span><span class="fu">has</span>(f<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">name</span>))<span class="op">,</span> {</span>
-<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> f <span class="kw">=&gt;</span> partnerColor<span class="op">.</span><span class="fu">get</span>(f<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">name</span>)<span class="op">,</span> <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.4</span><span class="op">,</span></span>
-<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#0E1A2E"</span> <span class="op">:</span> <span class="st">"#FFFFFF"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.6</span></span>
-<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
-<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(totals<span class="op">,</span> {</span>
-<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"lon"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"lat"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span></span>
-<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"color"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#E6ECF3"</span> <span class="op">:</span> <span class="st">"#14233C"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
-<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>d<span class="op">.</span><span class="at">country</span><span class="sc">}\n${</span>d<span class="op">.</span><span class="at">n</span><span class="sc">}</span><span class="vs"> contributing cohort</span><span class="sc">${</span>d<span class="op">.</span><span class="at">n</span> <span class="op">&gt;</span> <span class="dv">1</span> <span class="op">?</span> <span class="st">"s"</span> <span class="op">:</span> <span class="st">""</span><span class="sc">}</span><span class="vs">`</span></span>
-<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
-<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(totals<span class="op">,</span> {</span>
-<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a>      <span class="co">// label sits just right of each circle, so bigger circles push it further out</span></span>
-<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lon</span> <span class="op">+</span> <span class="fl">0.8</span> <span class="op">+</span> <span class="fl">3.6</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(d<span class="op">.</span><span class="at">value</span> <span class="op">/</span> <span class="dv">220</span>)<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"lat"</span><span class="op">,</span></span>
-<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>      <span class="dt">text</span><span class="op">:</span> <span class="st">"country"</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span><span class="op">,</span></span>
-<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"currentColor"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">600</span><span class="op">,</span></span>
-<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#0E1A2E"</span> <span class="op">:</span> <span class="st">"#F7F9FB"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">paintOrder</span><span class="op">:</span> <span class="st">"stroke"</span></span>
-<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>    })</span>
-<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>  ]</span>
-<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="60" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 59;"><span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>totals <span class="op">=</span> places<span class="op">.</span><span class="fu">map</span>(p <span class="kw">=&gt;</span> {</span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> rows <span class="op">=</span> cohorts<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">country</span> <span class="op">===</span> p<span class="op">.</span><span class="at">country</span>)</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> {<span class="op">...</span>p<span class="op">,</span> <span class="dt">value</span><span class="op">:</span> d3<span class="op">.</span><span class="fu">sum</span>(rows<span class="op">,</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lr_wgs</span> <span class="op">??</span> <span class="dv">0</span>)<span class="op">,</span> n<span class="op">:</span> rows<span class="op">.</span><span class="at">length</span>}</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>})<span class="op">.</span><span class="fu">filter</span>(d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">value</span> <span class="op">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>Plot<span class="op">.</span><span class="fu">plot</span>({</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  <span class="dt">width</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(width<span class="op">,</span> <span class="dv">760</span>)<span class="op">,</span></span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a>  <span class="dt">height</span><span class="op">:</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">min</span>(width<span class="op">,</span> <span class="dv">760</span>) <span class="op">*</span> <span class="fl">1.05</span><span class="op">,</span></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>  <span class="dt">projection</span><span class="op">:</span> {</span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>    <span class="dt">type</span><span class="op">:</span> <span class="st">"mercator"</span><span class="op">,</span></span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>    <span class="dt">domain</span><span class="op">:</span> {<span class="dt">type</span><span class="op">:</span> <span class="st">"MultiPoint"</span><span class="op">,</span> <span class="dt">coordinates</span><span class="op">:</span> [[<span class="op">-</span><span class="dv">112</span><span class="op">,</span> <span class="dv">30</span>]<span class="op">,</span> [<span class="op">-</span><span class="dv">36</span><span class="op">,</span> <span class="op">-</span><span class="dv">55</span>]]}<span class="op">,</span></span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>    <span class="dt">inset</span><span class="op">:</span> <span class="dv">8</span></span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>  }<span class="op">,</span></span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>  <span class="dt">r</span><span class="op">:</span> {<span class="dt">range</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">34</span>]<span class="op">,</span> <span class="dt">domain</span><span class="op">:</span> [<span class="dv">0</span><span class="op">,</span> <span class="dv">220</span>]}<span class="op">,</span></span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>  <span class="dt">marks</span><span class="op">:</span> [</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(land<span class="op">,</span> {<span class="dt">fill</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#1E2D45"</span> <span class="op">:</span> <span class="st">"#E4E9EF"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#0E1A2E"</span> <span class="op">:</span> <span class="st">"#FFFFFF"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.6</span>})<span class="op">,</span></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">geo</span>(land<span class="op">.</span><span class="at">features</span><span class="op">.</span><span class="fu">filter</span>(f <span class="kw">=&gt;</span> partnerColor<span class="op">.</span><span class="fu">has</span>(f<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">name</span>))<span class="op">,</span> {</span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> f <span class="kw">=&gt;</span> partnerColor<span class="op">.</span><span class="fu">get</span>(f<span class="op">.</span><span class="at">properties</span><span class="op">.</span><span class="at">name</span>)<span class="op">,</span> <span class="dt">fillOpacity</span><span class="op">:</span> <span class="fl">0.4</span><span class="op">,</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#0E1A2E"</span> <span class="op">:</span> <span class="st">"#FFFFFF"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">0.6</span></span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">dot</span>(totals<span class="op">,</span> {</span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> <span class="st">"lon"</span><span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"lat"</span><span class="op">,</span> <span class="dt">r</span><span class="op">:</span> <span class="st">"value"</span><span class="op">,</span></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"color"</span><span class="op">,</span> <span class="dt">stroke</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#E6ECF3"</span> <span class="op">:</span> <span class="st">"#14233C"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="fl">1.2</span><span class="op">,</span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a>      <span class="dt">title</span><span class="op">:</span> d <span class="kw">=&gt;</span> <span class="vs">`</span><span class="sc">${</span>d<span class="op">.</span><span class="at">country</span><span class="sc">}\n${</span>d<span class="op">.</span><span class="at">n</span><span class="sc">}</span><span class="vs"> contributing cohort</span><span class="sc">${</span>d<span class="op">.</span><span class="at">n</span> <span class="op">&gt;</span> <span class="dv">1</span> <span class="op">?</span> <span class="st">"s"</span> <span class="op">:</span> <span class="st">""</span><span class="sc">}</span><span class="vs">`</span></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a>    })<span class="op">,</span></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a>    Plot<span class="op">.</span><span class="fu">text</span>(totals<span class="op">,</span> {</span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a>      <span class="co">// label sits just right of each circle, so bigger circles push it further out</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a>      <span class="dt">x</span><span class="op">:</span> d <span class="kw">=&gt;</span> d<span class="op">.</span><span class="at">lon</span> <span class="op">+</span> <span class="fl">0.8</span> <span class="op">+</span> <span class="fl">3.6</span> <span class="op">*</span> <span class="bu">Math</span><span class="op">.</span><span class="fu">sqrt</span>(d<span class="op">.</span><span class="at">value</span> <span class="op">/</span> <span class="dv">220</span>)<span class="op">,</span> <span class="dt">y</span><span class="op">:</span> <span class="st">"lat"</span><span class="op">,</span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a>      <span class="dt">text</span><span class="op">:</span> <span class="st">"country"</span><span class="op">,</span> <span class="dt">textAnchor</span><span class="op">:</span> <span class="st">"start"</span><span class="op">,</span></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>      <span class="dt">fill</span><span class="op">:</span> <span class="st">"currentColor"</span><span class="op">,</span> <span class="dt">fontSize</span><span class="op">:</span> <span class="dv">12</span><span class="op">,</span> <span class="dt">fontWeight</span><span class="op">:</span> <span class="dv">600</span><span class="op">,</span></span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a>      <span class="dt">stroke</span><span class="op">:</span> dark <span class="op">?</span> <span class="st">"#0E1A2E"</span> <span class="op">:</span> <span class="st">"#F7F9FB"</span><span class="op">,</span> <span class="dt">strokeWidth</span><span class="op">:</span> <span class="dv">3</span><span class="op">,</span> <span class="dt">paintOrder</span><span class="op">:</span> <span class="st">"stroke"</span></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a>  ]</span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
 <div>
 <div id="ojs-cell-2-1" data-nodetype="declaration">
@@ -533,7 +562,6 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<p>Countries contributing long-read genomes to the LatinPangenome. Positions mark the country, not a specific community.</p>
 <section id="from-maps-to-medicine" class="level2">
 <h2 class="anchored" data-anchor-id="from-maps-to-medicine">From maps to medicine</h2>
 <div class="m2m">
@@ -555,16 +583,11 @@ window.Quarto = {
     <p>Study germline and somatic structural variants in gallbladder cancer among Chilean patients of Mapuche ancestry, the population with the highest burden worldwide.</p>
     <a class="more" href="./research.html#medicine">About the gallbladder study</a>
   </div>
-  <div class="stage">
-    <div class="aim">Aim 4</div>
-    <h3 class="anchored">Local capacity, local leadership</h3>
-    <p>Sequencing, analysis and data stewardship happen in Latin America, with yearly hands-on workshops run with CABANAnet.</p>
-  </div>
 </div>
 </section>
 <section id="why-this-matters" class="level2">
 <h2 class="anchored" data-anchor-id="why-this-matters">Why this matters</h2>
-<p>Populations of the Americas carry alleles found nowhere else, some with clear medical consequences. Yet the Human Pangenome Reference Consortium currently includes no reference population of Indigenous American ancestry, and Latin American populations are strongly substructured. Without a regional reference, the variation that drives health differences across the region stays invisible.</p>
+<p>Populations of the Americas carry alleles found nowhere else, some with clear medical consequences. Yet available pangenomes include no reference populations of Indigenous American ancestry, and Latin American populations are strongly substructured. Without a regional reference, the variation that drives health differences across the region stays invisible.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="assets/figures/fig2-ancestry-pca.png" class="img-fluid figure-img" style="width:85.0%" alt="PCA plot with ellipses for Central Native American, Southern Native American, Andean and admixed populations from Colombia, Ecuador, Peru, Chile and Argentina, next to a map of South America."></p>
@@ -576,13 +599,13 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="latest-news">Latest news</h2>
 <div id="listing-latest-news" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YW5ub3VuY2VtZW50cw==" data-listing-date-sort="1790316000000" data-listing-file-modified-sort="1791229915000" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="quarto-post image-right" data-index="0" data-categories="YW5ub3VuY2VtZW50cw==" data-listing-date-sort="1790316000000" data-listing-file-modified-sort="1793049678010" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="./news/posts/2026-09-welcome/index.html" class="no-external">LatinGenomes launches its website</a>
+<a href="./news/posts/2026-09-welcome/index.html" class="no-external">Latin Pangenomes Genomes launches its website</a>
 </h3>
 <div class="delink listing-description"><a href="./news/posts/2026-09-welcome/index.html" class="no-external">
-<p>A home for the Latin American pangenome, cohort information, and upcoming data releases.</p>
+<p>A home for the Latin American Pangenomes, cohort information, and upcoming data releases.</p>
 </a></div>
 </div>
 <div class="metadata">
@@ -1033,19 +1056,6 @@ window._ojs.runtime.interpretFromScriptTags();
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer">
-  <div class="nav-footer">
-    <div class="nav-footer-left">
-      &nbsp;
-    </div>   
-    <div class="nav-footer-center">
-      &nbsp;
-    </div>
-    <div class="nav-footer-right">
-<p>Built with <a href="https://quarto.org">Quarto</a>. Content licensed CC BY 4.0.</p>
-</div>
-  </div>
-</footer>
 
 
 

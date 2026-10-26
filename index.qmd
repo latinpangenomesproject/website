@@ -12,7 +12,34 @@ listing:
 ---
 
 ::: {.hero}
-# A pangenome for Latin America
+```{=html}
+<!-- Project logo: ink parts use currentColor and node centers use the page background,
+     so the same mark works in both light and dark mode -->
+<div style="display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap;margin-bottom:2.5rem">
+  <svg viewBox="4 24 112 72" width="168" height="108" role="img" aria-label="Latin Pangenomes Project logo" xmlns="http://www.w3.org/2000/svg" style="flex:none">
+    <g fill="none" stroke-linecap="round" stroke-width="7">
+      <path d="M12 60 H28" stroke="currentColor"/>
+      <path d="M52 60 H64" stroke="currentColor"/>
+      <path d="M96 60 H108" stroke="currentColor"/>
+      <path d="M28 60 C33 34 47 34 52 60" stroke="#E3A92B"/>
+      <path d="M28 60 C33 86 47 86 52 60" stroke="currentColor"/>
+      <path d="M64 60 C71 24 89 24 96 60" stroke="#D6423B"/>
+      <path d="M64 60 H96" stroke="currentColor"/>
+      <path d="M64 60 C71 96 89 96 96 60" stroke="var(--bs-primary)"/>
+    </g>
+    <g fill="var(--bs-body-bg)" stroke="currentColor" stroke-width="4">
+      <circle cx="28" cy="60" r="6.5"/><circle cx="52" cy="60" r="6.5"/>
+      <circle cx="64" cy="60" r="6.5"/><circle cx="96" cy="60" r="6.5"/>
+    </g>
+    <circle cx="12" cy="60" r="4.5" fill="currentColor"/>
+    <circle cx="108" cy="60" r="4.5" fill="currentColor"/>
+  </svg>
+  <div style="font-family:'Bricolage Grotesque','Helvetica Neue',Arial,sans-serif;line-height:1.05">
+    <div style="font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;letter-spacing:-0.02em">Latin Pangenomes</div>
+    <div style="font-size:clamp(1.8rem,4vw,2.6rem);font-weight:400;color:var(--lg-muted)">Project</div>
+  </div>
+</div>
+```
 
 [We are sequencing 1,000 long-read genomes from Indigenous and admixed ancestries across Latin America to find the structural variation that the current human reference genome misses, and to learn what it does in immune cells and in gallbladder cancer.]{.lede}
 :::
@@ -66,8 +93,6 @@ Plot.plot({
 })
 ```
 
-Countries contributing long-read genomes to the LatinPangenome. Positions mark the country, not a specific community.
-
 ## From maps to medicine
 
 ```{=html}
@@ -90,17 +115,12 @@ Countries contributing long-read genomes to the LatinPangenome. Positions mark t
     <p>Study germline and somatic structural variants in gallbladder cancer among Chilean patients of Mapuche ancestry, the population with the highest burden worldwide.</p>
     <a class="more" href="research.qmd#medicine">About the gallbladder study</a>
   </div>
-  <div class="stage">
-    <div class="aim">Aim 4</div>
-    <h3>Local capacity, local leadership</h3>
-    <p>Sequencing, analysis and data stewardship happen in Latin America, with yearly hands-on workshops run with CABANAnet.</p>
-  </div>
 </div>
 ```
 
 ## Why this matters
 
-Populations of the Americas carry alleles found nowhere else, some with clear medical consequences. Yet the Human Pangenome Reference Consortium currently includes no reference population of Indigenous American ancestry, and Latin American populations are strongly substructured. Without a regional reference, the variation that drives health differences across the region stays invisible.
+Populations of the Americas carry alleles found nowhere else, some with clear medical consequences. Yet available pangenomes include no reference populations of Indigenous American ancestry, and Latin American populations are strongly substructured. Without a regional reference, the variation that drives health differences across the region stays invisible.
 
 ![Ancestry-specific PCA of the Indigenous fraction of Latin American genomes. Indigenous components (green) and admixed populations (colored) occupy distinct, sometimes non-overlapping ranges. Data from Homburger, Moreno-Estrada et al. 2015, *PLOS Genetics*.](assets/figures/fig2-ancestry-pca.png){fig-alt="PCA plot with ellipses for Central Native American, Southern Native American, Andean and admixed populations from Colombia, Ecuador, Peru, Chile and Argentina, next to a map of South America." width="85%"}
 

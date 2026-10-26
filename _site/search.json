@@ -30,9 +30,9 @@
   {
     "objectID": "news/posts/2026-09-welcome/index.html",
     "href": "news/posts/2026-09-welcome/index.html",
-    "title": "LatinGenomes launches its website",
+    "title": "Latin Pangenomes Genomes launches its website",
     "section": "",
-    "text": "This site will host project updates, workshop announcements and, as they are released, the LatinPangenome graphs and the structural variant eQTL database.\n\n\n\n\n Back to top"
+    "text": "This site will host project updates, workshop announcements and, as they are released, the Latin Pangenomes graphs and the structural variant eQTL database.\n\n\n\n\n Back to top"
   },
   {
     "objectID": "team.html",
@@ -46,14 +46,14 @@
     "href": "team.html#partners",
     "title": "Team",
     "section": "Partners",
-    "text": "Partners\nPacBio (long-read sequencing), Broad Institute, Novo Nordisk Foundation, LatinCells, funded by the Chan Zuckerberg Initiative (single-cell profiling), and CABANAnet (training)"
+    "text": "Partners\nPacBio, Broad Institute, Novo Nordisk Foundation, LatinCells, and CABANAnet."
   },
   {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "The human reference genome was assembled from very few people, so a large share of human variation is still missing from it. The Telomere-to-Telomere consortium and the Human Pangenome Reference Consortium have shown what long reads can recover, but many ancestries remain unrepresented, including every Indigenous American population. LatinGenomes brings together existing, consented DNA collections from across the region to close that gap.\nThe program builds on resources already being generated at no cost to this grant: long-read sequencing funded by PacBio, and single-cell RNA profiles of 500+ PBMC samples and healthy gallbladder tissue from the CZI-funded LatinCells project."
+    "text": "The human reference genome was assembled from very few people, so a large share of human variation is still missing from it. The Telomere-to-Telomere consortium and the Human Pangenome Reference Consortium have shown what long reads can recover, but many ancestries remain unrepresented, including Indigenous American population.\nThis project builds on long-read sequencing funded by PacBio, and single-cell RNA profiles of 500+ PBMC samples and healthy gallbladder tissue from the CZI-funded LatinCells project."
   },
   {
     "objectID": "research.html#maps",
@@ -86,36 +86,57 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "A pangenome for Latin America",
+    "title": "Latin Pangenomes Project",
     "section": "",
-    "text": "We are sequencing 1,000 long-read genomes from Indigenous and admixed ancestries across Latin America to find the structural variation that the current human reference genome misses, and to learn what it does in immune cells and in gallbladder cancer.\ncohorts = FileAttachment(\"data/cohorts.csv\").csv({typed: true})\nplaces = FileAttachment(\"data/countries.csv\").csv({typed: true})\ntopojson = require(\"topojson-client@3\")\nworld = d3.json(\"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json\")\nland = topojson.feature(world, world.objects.countries)\npartnerColor = new Map(places.map(d =&gt; [d.atlas_name, d.color]))\ndark = document.body.classList.contains(\"quarto-dark\")\ntotals = places.map(p =&gt; {\n  const rows = cohorts.filter(d =&gt; d.country === p.country)\n  return {...p, value: d3.sum(rows, d =&gt; d.lr_wgs ?? 0), n: rows.length}\n}).filter(d =&gt; d.value &gt; 0)\n\nPlot.plot({\n  width: Math.min(width, 760),\n  height: Math.min(width, 760) * 1.05,\n  projection: {\n    type: \"mercator\",\n    domain: {type: \"MultiPoint\", coordinates: [[-112, 30], [-36, -55]]},\n    inset: 8\n  },\n  r: {range: [0, 34], domain: [0, 220]},\n  marks: [\n    Plot.geo(land, {fill: dark ? \"#1E2D45\" : \"#E4E9EF\", stroke: dark ? \"#0E1A2E\" : \"#FFFFFF\", strokeWidth: 0.6}),\n    Plot.geo(land.features.filter(f =&gt; partnerColor.has(f.properties.name)), {\n      fill: f =&gt; partnerColor.get(f.properties.name), fillOpacity: 0.4,\n      stroke: dark ? \"#0E1A2E\" : \"#FFFFFF\", strokeWidth: 0.6\n    }),\n    Plot.dot(totals, {\n      x: \"lon\", y: \"lat\", r: \"value\",\n      fill: \"color\", stroke: dark ? \"#E6ECF3\" : \"#14233C\", strokeWidth: 1.2,\n      title: d =&gt; `${d.country}\\n${d.n} contributing cohort${d.n &gt; 1 ? \"s\" : \"\"}`\n    }),\n    Plot.text(totals, {\n      // label sits just right of each circle, so bigger circles push it further out\n      x: d =&gt; d.lon + 0.8 + 3.6 * Math.sqrt(d.value / 220), y: \"lat\",\n      text: \"country\", textAnchor: \"start\",\n      fill: \"currentColor\", fontSize: 12, fontWeight: 600,\n      stroke: dark ? \"#0E1A2E\" : \"#F7F9FB\", strokeWidth: 3, paintOrder: \"stroke\"\n    })\n  ]\n})\nCountries contributing long-read genomes to the LatinPangenome. Positions mark the country, not a specific community."
+    "text": "Latin Pangenomes\n    Project\n  \n\nWe are sequencing 1,000 long-read genomes from Indigenous and admixed ancestries across Latin America to find the structural variation that the current human reference genome misses, and to learn what it does in immune cells and in gallbladder cancer.\ncohorts = FileAttachment(\"data/cohorts.csv\").csv({typed: true})\nplaces = FileAttachment(\"data/countries.csv\").csv({typed: true})\ntopojson = require(\"topojson-client@3\")\nworld = d3.json(\"https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json\")\nland = topojson.feature(world, world.objects.countries)\npartnerColor = new Map(places.map(d =&gt; [d.atlas_name, d.color]))\ndark = document.body.classList.contains(\"quarto-dark\")\ntotals = places.map(p =&gt; {\n  const rows = cohorts.filter(d =&gt; d.country === p.country)\n  return {...p, value: d3.sum(rows, d =&gt; d.lr_wgs ?? 0), n: rows.length}\n}).filter(d =&gt; d.value &gt; 0)\n\nPlot.plot({\n  width: Math.min(width, 760),\n  height: Math.min(width, 760) * 1.05,\n  projection: {\n    type: \"mercator\",\n    domain: {type: \"MultiPoint\", coordinates: [[-112, 30], [-36, -55]]},\n    inset: 8\n  },\n  r: {range: [0, 34], domain: [0, 220]},\n  marks: [\n    Plot.geo(land, {fill: dark ? \"#1E2D45\" : \"#E4E9EF\", stroke: dark ? \"#0E1A2E\" : \"#FFFFFF\", strokeWidth: 0.6}),\n    Plot.geo(land.features.filter(f =&gt; partnerColor.has(f.properties.name)), {\n      fill: f =&gt; partnerColor.get(f.properties.name), fillOpacity: 0.4,\n      stroke: dark ? \"#0E1A2E\" : \"#FFFFFF\", strokeWidth: 0.6\n    }),\n    Plot.dot(totals, {\n      x: \"lon\", y: \"lat\", r: \"value\",\n      fill: \"color\", stroke: dark ? \"#E6ECF3\" : \"#14233C\", strokeWidth: 1.2,\n      title: d =&gt; `${d.country}\\n${d.n} contributing cohort${d.n &gt; 1 ? \"s\" : \"\"}`\n    }),\n    Plot.text(totals, {\n      // label sits just right of each circle, so bigger circles push it further out\n      x: d =&gt; d.lon + 0.8 + 3.6 * Math.sqrt(d.value / 220), y: \"lat\",\n      text: \"country\", textAnchor: \"start\",\n      fill: \"currentColor\", fontSize: 12, fontWeight: 600,\n      stroke: dark ? \"#0E1A2E\" : \"#F7F9FB\", strokeWidth: 3, paintOrder: \"stroke\"\n    })\n  ]\n})"
   },
   {
     "objectID": "index.html#from-maps-to-medicine",
     "href": "index.html#from-maps-to-medicine",
-    "title": "A pangenome for Latin America",
+    "title": "Latin Pangenomes Project",
     "section": "From maps to medicine",
-    "text": "From maps to medicine\n\n  \n    Aim 1\n    Maps\n    Build a graph-based Latin American pangenome from 1,000 PacBio HiFi genomes at 30× and catalog the structural variants absent from the current reference.\n    About the pangenome\n  \n  \n    Aim 2\n    Mechanisms\n    Map how structural variants change gene expression in 29 cell types, using single-cell RNA from 520 of the same people.\n    About SV-eQTL mapping\n  \n  \n    Aim 3\n    Medicine\n    Study germline and somatic structural variants in gallbladder cancer among Chilean patients of Mapuche ancestry, the population with the highest burden worldwide.\n    About the gallbladder study\n  \n  \n    Aim 4\n    Local capacity, local leadership\n    Sequencing, analysis and data stewardship happen in Latin America, with yearly hands-on workshops run with CABANAnet."
+    "text": "From maps to medicine\n\n  \n    Aim 1\n    Maps\n    Build a graph-based Latin American pangenome from 1,000 PacBio HiFi genomes at 30× and catalog the structural variants absent from the current reference.\n    About the pangenome\n  \n  \n    Aim 2\n    Mechanisms\n    Map how structural variants change gene expression in 29 cell types, using single-cell RNA from 520 of the same people.\n    About SV-eQTL mapping\n  \n  \n    Aim 3\n    Medicine\n    Study germline and somatic structural variants in gallbladder cancer among Chilean patients of Mapuche ancestry, the population with the highest burden worldwide.\n    About the gallbladder study"
   },
   {
     "objectID": "index.html#why-this-matters",
     "href": "index.html#why-this-matters",
-    "title": "A pangenome for Latin America",
+    "title": "Latin Pangenomes Project",
     "section": "Why this matters",
-    "text": "Why this matters\nPopulations of the Americas carry alleles found nowhere else, some with clear medical consequences. Yet the Human Pangenome Reference Consortium currently includes no reference population of Indigenous American ancestry, and Latin American populations are strongly substructured. Without a regional reference, the variation that drives health differences across the region stays invisible.\n\n\n\nAncestry-specific PCA of the Indigenous fraction of Latin American genomes. Indigenous components (green) and admixed populations (colored) occupy distinct, sometimes non-overlapping ranges. Data from Homburger, Moreno-Estrada et al. 2015, PLOS Genetics."
+    "text": "Why this matters\nPopulations of the Americas carry alleles found nowhere else, some with clear medical consequences. Yet available pangenomes include no reference populations of Indigenous American ancestry, and Latin American populations are strongly substructured. Without a regional reference, the variation that drives health differences across the region stays invisible.\n\n\n\nAncestry-specific PCA of the Indigenous fraction of Latin American genomes. Indigenous components (green) and admixed populations (colored) occupy distinct, sometimes non-overlapping ranges. Data from Homburger, Moreno-Estrada et al. 2015, PLOS Genetics."
   },
   {
     "objectID": "index.html#latest-news",
     "href": "index.html#latest-news",
-    "title": "A pangenome for Latin America",
+    "title": "Latin Pangenomes Project",
     "section": "Latest news",
-    "text": "Latest news\n\n\n\n\n\nLatinGenomes launches its website\n\n\nA home for the Latin American pangenome, cohort information, and upcoming data releases.\n\n\n\n\n\nSep 25, 2026\n\n\n\n\n\nNo matching items\n\nAll news and updates"
+    "text": "Latest news\n\n\n\n\n\nLatin Pangenomes Genomes launches its website\n\n\nA home for the Latin American Pangenomes, cohort information, and upcoming data releases.\n\n\n\n\n\nSep 25, 2026\n\n\n\n\n\nNo matching items\n\nAll news and updates"
   },
   {
     "objectID": "news/index.html",
     "href": "news/index.html",
     "title": "News",
     "section": "",
-    "text": "LatinGenomes launches its website\n\n\n\nannouncements\n\n\n\nA home for the Latin American pangenome, cohort information, and upcoming data releases.\n\n\n\n\n\nSep 25, 2026\n\n\n\n\n\nNo matching items\n Back to top"
+    "text": "Latin Pangenomes Genomes launches its website\n\n\n\nannouncements\n\n\n\nA home for the Latin American Pangenomes, cohort information, and upcoming data releases.\n\n\n\n\n\nSep 25, 2026\n\n\n\n\n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "Email: latinpangenomeproject@gmail.com\n\n\n\n\n\n\nResearch participants and communities. Questions about the project, how samples are used, or requests for a visit: latinpangenomeproject@gmail.com"
+  },
+  {
+    "objectID": "contact.html#general-inquiries",
+    "href": "contact.html#general-inquiries",
+    "title": "Contact",
+    "section": "",
+    "text": "Email: latinpangenomeproject@gmail.com"
+  },
+  {
+    "objectID": "contact.html#who-to-contact",
+    "href": "contact.html#who-to-contact",
+    "title": "Contact",
+    "section": "",
+    "text": "Research participants and communities. Questions about the project, how samples are used, or requests for a visit: latinpangenomeproject@gmail.com"
   }
 ]

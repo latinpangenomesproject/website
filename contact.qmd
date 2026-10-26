@@ -1,0 +1,27 @@
+---
+title: "Contact"
+subtitle: "Get in touch with the Latin Pangenomes Project"
+toc: false
+---
+
+:::: {.columns}
+
+::: {.column width="48%"}
+## General inquiries
+
+**Email:** [latinpangenomeproject@gmail.com](mailto:latinpangenomeproject@gmail.com)
+
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="48%"}
+## Who to contact
+
+**Research participants and communities.** Questions about the project, how samples are used, or requests for a visit: [latinpangenomeproject@gmail.com](mailto:latinpangenomeproject@gmail.com)
+
+:::
+
+::::
+

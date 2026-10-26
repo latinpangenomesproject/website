@@ -67,7 +67,7 @@
   .band-key b { font-family: "Bricolage Grotesque", sans-serif; }
   
   /* ---------- Maps → Mechanisms → Medicine, plus Aim 4 as a supporting column ---------- */
-  .m2m { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin: 1.5rem 0 0; }
+  .m2m { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin: 1.5rem 0 0; }
   .m2m .stage { padding: 1.25rem 1.5rem 1.25rem 0; border-top: 3px solid var(--bs-primary); position: relative; }
   .m2m .stage + .stage { padding-left: 1.5rem; }
   .m2m .stage::after {

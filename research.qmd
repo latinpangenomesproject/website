@@ -3,11 +3,9 @@ title: "Research"
 subtitle: "Structural variation of medical relevance in underrepresented Indigenous ancestries"
 ---
 
-The human reference genome was assembled from very few people, so a large share of human variation is still missing from it. The Telomere-to-Telomere consortium and the Human Pangenome Reference Consortium have shown what long reads can recover, but many ancestries remain unrepresented, including every Indigenous American population. LatinGenomes brings together existing, consented DNA collections from across the region to close that gap.
+The human reference genome was assembled from very few people, so a large share of human variation is still missing from it. The Telomere-to-Telomere consortium and the Human Pangenome Reference Consortium have shown what long reads can recover, but many ancestries remain unrepresented, including Indigenous American population.
 
-The program builds on resources already being generated at no cost to this grant: long-read sequencing funded by PacBio, and single-cell RNA profiles of 500+ PBMC samples and healthy gallbladder tissue from the CZI-funded [LatinCells](https://www.latincells.org) project.
-
-![Geographic coverage of the LatinGenomes consortium. Countries are colored by contributing cohorts; icons mark pangenome reference samples, single-cell PBMC profiling, CABANAnet training, and gallbladder DNA and RNA profiling.](assets/figures/fig1-coverage-map.png){fig-alt="Map of the Americas with Mexico, Costa Rica, Colombia, Peru, Brazil, Chile, Uruguay, Argentina and part of the United States highlighted in distinct colors, with icons for each site's contribution." width="70%" fig-align="center"}
+This project builds on long-read sequencing funded by PacBio, and single-cell RNA profiles of 500+ PBMC samples and healthy gallbladder tissue from the CZI-funded [LatinCells](https://www.latincells.org) project.
 
 ## Aim 1: A Latin American pangenome {#maps}
 
