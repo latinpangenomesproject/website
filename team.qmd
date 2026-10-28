@@ -9,17 +9,26 @@ subtitle: "Cohort leads and collaborators across the consortium"
 <div class="team-country" style="--k:var(--c-mexico)">
   <h3>CINVESTAV - Mexico</h3>
   <p><strong>Principal investigators:</strong> Andrés Moreno-Estrada, Carlos Ortiz</p>
-  <p><strong>Postdocs:</strong> Name, Name</p>
+  <p><strong>Research team:</strong> Daniel Bustos-Diaz, Aarón E. Jaime, Santiago Medina</p>
 </div>
 <div class="team-country" style="--k:var(--c-chile)">
   <h3>University of Chile - Chile</h3>
   <p><strong>Principal investigators:</strong> Ricardo Verdugo</p>
-  <p><strong>Postdocs:</strong> Name, Name</p>
+  <p><strong>Research team:</strong> Naila Garcia Mendez</p>
 </div>
 <div class="team-country" style="--k:var(--c-uruguay)">
   <h3>Institut Pasteur de Montevideo - Uruguay</h3>
-  <p><strong>Principal investigators:</strong> Lucía Spangenberg</p>
-  <p><strong>Postdocs:</strong> Name, Name</p>
+  <p><strong>Principal investigator:</strong> Lucía Spangenberg</p>
+  <p><strong>Research team:</strong> Sofía Gonzales, Camila Simoes, Lucía Sosa</p>
+</div>
+```
+
+## Project coordinator
+
+```{=html}
+<div class="team-country" style="--k:var(--bs-warning)">
+  <h3>Consuelo D. Quinto-Cortés</h3>
+  <p>Mexico - CINVESTAV</p>
 </div>
 ```
 

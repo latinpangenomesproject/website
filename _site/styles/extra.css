@@ -104,7 +104,7 @@
   /* ---------- Team ---------- */
   .team-country { border-left: 6px solid var(--k); padding: .25rem 0 .25rem 1rem; margin: 1.5rem 0; }
   .team-country h3 { margin: 0 0 .3rem; font-size: 1.2rem; }
-  .team-country p { margin: 0; }
+.team-country p { margin: 0 0 .25rem; font-size: 1.15rem; }
   
   /* ---------- Misc ---------- */
   .dot { display: inline-block; width: .7em; height: .7em; border-radius: 50%; background: var(--k); margin-right: .35em; }
