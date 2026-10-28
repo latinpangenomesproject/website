@@ -4,9 +4,23 @@ subtitle: "Cohort leads and collaborators across the consortium"
 ---
 
 ```{=html}
-<div class="team-country" style="--k:var(--c-mexico)"><h3>Mexico</h3><p>Andrés Moreno-Estrada, Carlos Ortiz</p></div>
-<div class="team-country" style="--k:var(--c-chile)"><h3>Chile</h3><p>Ricardo Verdugo</p></div>
-<div class="team-country" style="--k:var(--c-uruguay)"><h3>Uruguay</h3><p>Lucía Spangenberg</p></div>
+<!-- Each team has one line per role. Add names separated by commas;
+     delete a whole <p>…</p> line if a team has nobody in that role. -->
+<div class="team-country" style="--k:var(--c-mexico)">
+  <h3>CINVESTAV - Mexico</h3>
+  <p><strong>Principal investigators:</strong> Andrés Moreno-Estrada, Carlos Ortiz</p>
+  <p><strong>Postdocs:</strong> Name, Name</p>
+</div>
+<div class="team-country" style="--k:var(--c-chile)">
+  <h3>University of Chile - Chile</h3>
+  <p><strong>Principal investigators:</strong> Ricardo Verdugo</p>
+  <p><strong>Postdocs:</strong> Name, Name</p>
+</div>
+<div class="team-country" style="--k:var(--c-uruguay)">
+  <h3>Institut Pasteur de Montevideo - Uruguay</h3>
+  <p><strong>Principal investigators:</strong> Lucía Spangenberg</p>
+  <p><strong>Postdocs:</strong> Name, Name</p>
+</div>
 ```
 
 ## Partners
